@@ -1,0 +1,44 @@
+<h2>Channel: {{ channel_name }}</h2>
+{% for thread in threads %}
+<div class="thread">
+    <div class="message">
+        <p><strong>{{ thread['original_message']['user'] }}:</strong> {{ thread['original_message']['text']|safe }}</p>
+        <p><small>{{ thread['original_message']['formatted_ts'] }}</small></p>
+        {% if 'files' in thread['original_message'] %}
+            {% for file in thread['original_message']["files"] %}
+            <p>File: <a href="{{ file['url_private'] }}" target="_blank">{{ file['name'] }}</a></p>
+            {% endfor %}
+        {% endif %}
+        {% if 'reactions' in thread['original_message'] %}
+            <p>Reactions:
+                {% for reaction in thread['original_message']['reactions'] %}
+                <span>{{ reaction['name'] }} ({{ reaction['count'] }})</span>
+                {% endfor %}
+            </p>
+        {% endif %}
+    </div>
+    {% if thread['replies'] %}
+    <div class="replies">
+        {% for reply in thread['replies'] %}
+        <div class="message reply">
+            <p><strong>{{ reply['user'] }}:</strong> {{ reply['text']|safe }}</p>
+            <p><small>{{ reply['formatted_ts'] }}</small></p>
+            {% if 'files' in reply %}
+                {% for file in reply["files"] %}
+                <p>File: <a href="{{ file['url_private'] }}" target="_blank">{{ file['name'] }}</a></p>
+                {% endfor %}
+            {% endif %}
+            {% if 'reactions' in reply %}
+                <p>Reactions:
+                    {% for reaction in reply['reactions'] %}
+                    <span>{{ reaction['name'] }} ({{ reaction['count'] }})</span>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <hr>
+</div>
+{% endfor %}

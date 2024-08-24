@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { display: flex; }
+        .menu { width: 200px; }
+        .content { flex-grow: 1; padding: 20px; }
+        .emoji { width: 20px; height: 20px; }
+        .thread { margin-top: 20px; }
+        .reply { margin-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                {% for channel in channels %}
+                <li><a href="/{{ channel }}/{{ channel }}.html">{{ channel }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="content">
+            {{ content|safe }}
+        </div>
+    </div>
+</body>
+</html>
