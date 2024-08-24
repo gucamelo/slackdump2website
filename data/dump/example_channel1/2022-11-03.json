@@ -1,0 +1,59 @@
+[
+  {
+    "type": "message",
+    "user": "user",
+    "text": "\u003c@user\u003e has joined the channel",
+    "ts": "1667469554.575439",
+    "subtype": "channel_join",
+    "inviter": "user",
+    "replace_original": false,
+    "delete_original": false,
+    "metadata": {
+      "event_type": "",
+      "event_payload": null
+    },
+    "blocks": null,
+    "user_team": "",
+    "source_team": "",
+    "user_profile": null,
+    "reply_users_count": 0
+  },
+  {
+    "type": "message",
+    "user": "user",
+    "text": "\u003c@user\u003e has joined the channel",
+    "ts": "1667469554.636379",
+    "subtype": "channel_join",
+    "inviter": "user",
+    "replace_original": false,
+    "delete_original": false,
+    "metadata": {
+      "event_type": "",
+      "event_payload": null
+    },
+    "blocks": null,
+    "user_team": "",
+    "source_team": "",
+    "user_profile": null,
+    "reply_users_count": 0
+  },
+  {
+    "type": "message",
+    "user": "U049HLJ7YGH",
+    "text": "\u003c@user\u003e has joined the channel",
+    "ts": "1667469554.684239",
+    "subtype": "channel_join",
+    "inviter": "user",
+    "replace_original": false,
+    "delete_original": false,
+    "metadata": {
+      "event_type": "",
+      "event_payload": null
+    },
+    "blocks": null,
+    "user_team": "",
+    "source_team": "",
+    "user_profile": null,
+    "reply_users_count": 0
+  }
+]
