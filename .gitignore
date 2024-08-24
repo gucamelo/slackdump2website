@@ -1,6 +1,6 @@
 *.zip
-#/data/emojis.json
-#/data/dump/*
+/data/emojis.json
+/data/dump/*
 /output/*
 slackdump
 /src/__pycache__
