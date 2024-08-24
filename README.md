@@ -1,6 +1,7 @@
 # Slack Archive Project - slackdump2website
 
 This project converts exported Slack messages into an HTML view.
+I'm open to changes to the project. I did this very fast to get a minimal copy of a slack workspace with their latest change in its policy regarding data conservation.
 
 ## Project Structure
 
