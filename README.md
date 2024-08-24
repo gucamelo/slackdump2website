@@ -31,6 +31,10 @@ slackdump2website/
 └── README.md
 ```
 
+## Example data
+
+There are some example data in the repository for testing, you should replace everything inside data with your own dump
+
 ## Prerequisites
 
 Make sure you have Python 3.6 or higher installed.
